@@ -1,0 +1,138 @@
+.competences {
+  max-width: 100vw;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.competences h2 {
+  margin-bottom: 15px;
+}
+
+.competences p {
+  margin: 20px 20px;
+  text-align: justify;
+}
+
+#competencesH3 {
+  margin: 1.5em;
+  width: 80%;
+  margin: 10px auto 5px;
+}
+
+.competenceContainer {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 20px;
+}
+
+.competencesIcons {
+  /* width: 70%;
+  margin: 15px auto; */
+  width: 80px;
+  margin: 15px auto;
+}
+
+.backendIcons,
+.frontendIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Ajout pour centrer horizontalement */
+  border-top: 2px solid grey;
+  margin: 10px 15px 10px;
+  padding-top: 10px;
+}
+
+.nodeIcon {
+  margin: 0 15px;
+}
+
+.cvImage {
+  cursor: default;
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.cvContainer {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.btnCv {
+  margin: 15px auto;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 769px) {
+  .competenceContainer {
+    flex-direction: column;
+  }
+
+  .backendIcons,
+  .frontendIcons {
+    width: 80%;
+    margin: 10px auto;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .competencesIcons {
+    width: 70px;
+    margin: 10px auto;
+    padding: 10px;
+    max-height: 120px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .competencesIcons img {
+    flex: 1;
+    width: auto;
+    max-width: 80px;
+    width: auto;
+  }
+
+  .competencesIcons img[src*="sql.png"] {
+    margin: 0;
+  }
+
+  .competencesIcons img[src*="db.png"],
+  .competencesIcons img[src*="react.png"] {
+    width: 80px;
+  }
+
+  .competences p {
+    width: 60%;
+    text-align: justify;
+    margin: 5% auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .fullCompetences {
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cvContainer {
+    flex: 1;
+    max-width: 40%;
+    margin: 0 auto;
+  }
+}

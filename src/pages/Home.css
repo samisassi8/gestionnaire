@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300&family=Poppins:wght@300;400&family=Raleway:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Raleway:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300;600&family=Poppins:wght@300;400&family=Raleway:wght@600&display=swap");
+
+.Home_container {
+  text-align: center;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/background.jpeg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#homeH1 {
+  font-size: 3.2em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#homeH1,
+#homeH2 {
+  color: white;
+  transform: rotateY(0deg);
+  transition: transform 1s ease-in-out;
+}
+
+#homeH2 {
+  margin-top: 10px;
+}
+
+.info:hover #homeH1 {
+  transform: rotateY(360deg);
+}
+
+.info:hover #homeH2 {
+  transform: rotateY(-360deg);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c9cbcc;
+  padding: -1.6em;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -2px -2px 10px -1px rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.btn:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transform: translateY(0.5em);
+}
+
+.btn svg {
+  transition: transform 0.5s;
+}
+
+.btn:hover svg {
+  transform: scale(0.9);
+  fill: #333333;
+}
+
+@media screen and (max-width: 768px) {
+  .Home_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Styles for screens with a width between 601px and 1024px */
+}
+
+@media screen and (min-width: 1025px) {
+  /* Styles for screens with a minimum width of 1025px */
+}
